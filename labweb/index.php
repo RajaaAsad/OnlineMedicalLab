@@ -49,7 +49,7 @@
               To keep connected with us please login with your personal info
             </p>
            
-            <form action="signin.php" method="post" style=" background:linear-gradient(to right, #0a254f, #085eb4);">
+            <form action="sign.php" method="post" style=" background:linear-gradient(to right, #0a254f, #085eb4);">
               <button type="submit" name="sign">Sign IN</button>
             </form>
 

@@ -43,11 +43,8 @@ include("../Class.Test.php");
                   <form action="logout.php" method="post">
                      <button type="submit" name="logout" class="btn btn-default btn-primary" >Logout</button>
                    </form>
-
-                </li>
-                  
-             
-                </ul>
+                  </li>
+                 </ul>
               </div>
             </div>
             <div class="col-md-8">
@@ -107,13 +104,17 @@ include("../Class.Test.php");
                $query1=Test::getAllTests($_SESSION['id']);
                 while($row=$query1->fetch())
               {
-              ?>   
+              ?>
+              
               <br>
-          <div class="card card-body h-100" style="width:70%">
+              <div  style="width: 100%; overflow: hidden;">
+              <div class="card card-body h-100" style="width:600px;float:left;">
                   <h6 class="d-flex align-items-center mb-3"><i class="material-icons text-info mr-2">Medical Test</i></h6>
                   <h6 class="d-flex align-items-center mb-3"><i class="material-icons text-info mr-2"><?php echo $row['name'] ?></i></h6>
                   <a href=<?php echo '../tests/'.$row['test']?> class="btn btn-default btn-primary" style="width:30%" download="proposed_file_name">Download</a>
-          </div>
+              </div>
+              </div>
+              
         <?php
            }
           echo '</div>';
