@@ -1,6 +1,7 @@
 # Online_Medical_Lab
 
 •	Technologies used: HTML, CSS, Bootstrap, PHP, MySQL database
+
 •	Designed and implemented a user-friendly platform medical lab website where patients can view their medical results online. Our platform provides two roles: admin and patient.
 
 •	Admin: can perform CRUD operations on users, add medical tests, and view user information.
